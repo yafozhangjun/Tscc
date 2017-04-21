@@ -1,0 +1,95 @@
+﻿
+.bb_n_con {
+    width: 1102px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFF;
+}
+.bb_n_left {
+    float: left;
+    width: 221px;
+    height: auto;
+}
+.bb_n_left_title {
+    width: 194px;
+    padding-left: 27px;
+    height: 37px;
+    background-image: url(img/n_left_title_bg.jpg);
+    line-height: 37px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bolder;
+}
+.bb_n_left_list_1 {
+    width: 221px;
+    height: auto;
+    border-bottom: 4px solid #dbdbdb;
+}
+.rolinList {
+    width: 221px;
+    height: auto;
+    margin: 0px auto 0 auto;
+    text-align: left;
+    border-top: 1px solid #DADADA;
+}
+.rolinList li {
+    list-style: none
+ margin-bottom: 0px;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+}
+.rolinList li h2 {
+    width: 204px;
+    height: 40px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 15px;
+    color: #878787;
+    cursor: pointer;
+}
+.content {
+    height: auto;
+    width: 221px;
+    background: #fff;
+    background: #Fff;
+    font-size: 12px;
+    line-height: 16px;
+    /*display:none;*/
+}
+.bb_n_left_con {
+    width: 219px;
+    height: auto;
+}
+.bb_n_left_con a:visited div {
+    width: 189px;
+    height: 40px;
+    text-decoration: none;
+    border-right: 1px solid #c7c7c7;
+}
+.bb_n_left_con a:link div {
+    width: 189px;
+    height: 40px;
+    text-decoration: none;
+    border-right: 1px solid #c7c7c7;
+
+}
+.bb_n_left_con div {
+    width: 189px;
+    height: 40px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 30px;
+    color: #878787;
+    background-image: url(img/n_list_dot.jpg);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    font-size: 14px;
+    border-right: 1px solid #c7c7c7;
+}

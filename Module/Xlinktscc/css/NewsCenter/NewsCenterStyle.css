@@ -1,0 +1,86 @@
+﻿body {
+}
+
+#nc_context{
+    margin-top:5px;
+}
+
+.nc_left_nav{
+    /*width:255px;*/
+    width:20%;
+    float:left;
+    border-width:thin;
+    border-style:solid;
+    
+    height:887px;
+
+    margin-left:20px;
+}
+
+.innerfast{
+    
+    /*list-style-type:none;*/
+    /*display:none;*/
+    background:#fff;
+    margin-top:5px;
+    margin-left:2%;
+    border-width:thin;
+    border-style:solid;
+}
+
+.ln1{
+    width:95%;
+    height:120px;
+
+    border-width:thin;
+    border-style:solid;
+
+    background-color:#4cff00;
+    
+}
+
+.ln2{
+    width:95%;
+    height:345px;
+
+    border-width:thin;
+    border-style:solid;
+
+    background-color:#b6ff00;
+    
+}
+
+.ln3{
+    width:95%;
+    height:345px;
+
+    border-width:thin;
+    border-style:solid;
+
+    background-color:#00ff21;
+    
+}
+
+
+
+/*内容块中的样式*/
+.nc_context{
+    width:60%;
+    height:1290px;
+    border-style:solid;
+    border-width:thin;
+   float:left;
+   margin-left:15px;
+}
+/*子选择器，选中符合要求的所有dl块*/
+.nc_context>div>dl{
+    width:inherit;
+    height:175px;
+    border-style:solid;
+    border-width:thin;
+}
+
+.nc_c_img{
+    width:180px;
+    height:130px;
+}

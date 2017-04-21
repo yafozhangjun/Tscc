@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<style>
+</style>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+     @*可以在这个引用js在这里*@
+    <link href="~/css/layout.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="head">
+        <div class="top_box">
+            <div class="logo">
+                <span class="xlink"></span>
+            </div>
+            <div class="title">
+                "智能热力"解决方案提供商
+            </div>
+            <div>
+                <div class="search">
+                    <input type="text" placeholder="请输入关键字" />
+                    <button type="button">搜索</button>
+                </div>
+                <div style="float:left; height:45px; width:760px;">
+                    <div class="nav" style="margin:10px 60px;">
+                        <ul id="nav">
+                            <li class="nLi">@Html.ActionLink("网站首页","Index","home")</li>
+                            <li class="nLi">
+                                @*<a href="/gwm/">产品中心</a>*@
+                                @Html.ActionLink("产品中心","Index", "Product")
+                                <ul class="sub">
+                                    <li>@Html.ActionLink("硬件", "Hardware", "Product")</li>
+                                    <li>@Html.ActionLink("软件", "Software", "Product")</li>
+                                    <li>@Html.ActionLink("PVSS", "Pvss", "Product")</li>
+                                    <li>@Html.ActionLink("云平台", "CloudPlatform", "Product")</li>
+                                </ul>
+                            </li>
+                            <li class="nLi">
+                                @Html.ActionLink("解决方案","Index","Solution")
+                                
+                                <ul class="sub">
+                                    @Html.ActionLink("监控系统", "SurveillanceSystem", "Solution")
+                                    @Html.ActionLink("行业新闻", "IndustryNews", "Solution")
+                                    @*<li><a href="/gsdt/">监控系统</a></li>
+                                    <li><a href="/hyxw/">行业新闻</a></li>*@
+                                </ul>
+                            </li>
+                            <li class="nLi">
+                                @*<a href="/cpzx/">公司业绩</a>*@
+                                @Html.ActionLink("公司业绩", "Index", "Performance")
+                                <ul class="sub">
+                                    @*<li><a href="/cpzx/cpjj/">华东区</a></li>
+                                    <li><a href="/cpzx/clfw/">华北区</a></li>*@
+                                    @Html.ActionLink("华东区", "EasternRegion", "Performance")
+                                    @Html.ActionLink("华北区", "NorthernRegion", "Performance")
+                                </ul>
+                            </li>
+                            <li class="nLi">
+                                @*<a href="/case/">新闻中心</a>*@
+                                @Html.ActionLink("新闻中心", "Index", "NewsCenter")
+                                <ul class="sub" style="display: none;"></ul>
+                            </li>
+                            <li class="nLi on">
+                                @*<a href="/ryzs/">关于我们</a>*@
+                                @Html.ActionLink("关于我们", "Index", "AboutUs")
+                                <ul class="sub">
+                                    @*<li><a href="/zzzs/">简介</a></li>
+                                    <li><a href="/zlzs/">团队介绍</a></li>*@
+                                    @Html.ActionLink("简介", "IntroductionUs", "AboutUs")
+                                    @Html.ActionLink("团队介绍", "IntroductionTeam", "AboutUs")
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="layout-footer">
+        <div class="footer">
+            <div class="FooterLink" style="float:left; padding:70px 15px 10px; width:600px;">
+                @*<a style="padding-right:20px;" href="~/Views/AboutUs/Index.cshtml">关于我们</a>*@
+                
+                    @Html.ActionLink("关于我们", "Index", "AboutUs")
+               
+                <span style="color:#ccc">|</span>       
+                    <a href="javascript:">招贤纳士</a>
+            </div>
+            <div class="Footerright" style="float:left;">
+                <div style="float:left; margin-top: 40px;margin-right: 140px ">
+                    <ul class="uls">
+                        <li style="font-size: 20px;"><a href="#">CONTACT  US</a></li>
+                        <li><a href="javascript:">联系我们</a></li>
+                    </ul>
+                </div>
+                <div style="float:left; margin-top: 40px;">
+                    <ul class="uls">
+                        <li style="font-size: 20px;"><a href="#">OR  WEIXIN</a></li>
+                        <li><a href="#">或关注微信</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div style="clear:both;"></div>
+
+        </div>
+        <div style="border-top:1px solid #ccc;">
+        </div>
+        <div class="footerboom">
+            <div class="footerleft">
+                <div class="footerlogo">
+                    <img src="~/css/img/logo.png" style="width:80px; height:80px;" />
+                </div>
+                <div class="footertitle">
+
+                    Copyright © 2014-2015北京天时前程自动化工程技术有限公司·版权所有 京ICP备 10218679 号
+                </div>
+            </div>
+            <div class="footerright2">
+                <div style="float:left; margin-top:50px; margin-right:30px;">
+                    <ul>
+                        <li>
+                            010-6870180-959
+                        </li>
+                        <li>
+                            服务时间：周一至周五 8:30-17:30
+                        </li>
+                    </ul>
+                </div>
+                <div style="float:left; margin-top:10px; margin-left:20px;">
+                    <img src="~/css/img/weixin.jpg" style="width:80px; height:80px;" />
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+</body>
+</html>

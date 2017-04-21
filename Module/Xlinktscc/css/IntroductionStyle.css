@@ -1,0 +1,59 @@
+﻿body {
+
+}
+/*公司简介正文块部分*/
+.ci_n_middle
+{
+    width:55%;
+    height:auto;
+    border:solid;
+    padding:15px 10px;
+    float:left;
+}
+/*公司简介右边热连接块*/
+.ci_n_right{
+    /*width:auto;*/
+    width:221px;
+    height:auto;
+    border:solid;
+    float:right;
+}
+
+.hi_h{
+    width:200px;
+    border:inherit;
+    margin-top:15px;
+    margin-left:8px;
+    padding-top:3px;
+    padding-left:5px;
+    
+}
+.hi_r1{
+    height:150px;
+    
+}
+
+.hi_r2{
+    min-height:200px;
+    max-height:350px;
+}
+
+.hi_r3{
+    height:70px;
+}
+
+.hi_r4{
+    height:200px;
+    margin-bottom:10px;
+}
+
+.aiticle{
+    
+
+}
+.p_row{
+    /*text-indent:each-line;*/
+    
+    letter-spacing:4px;/*字间距*/
+    line-height:25px;
+}
